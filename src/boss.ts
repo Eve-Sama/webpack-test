@@ -1,4 +1,9 @@
-function test(): void {
+import { render } from './test';
+import './assets/style/index.scss';
+
+function test1(): void {
   console.log('星哥nb');
 }
-test();
+test1();
+
+render('Hello World!');
