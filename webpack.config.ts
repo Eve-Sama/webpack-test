@@ -25,6 +25,11 @@ const config: Configuration = {
         exclude: /node_modules/
       },
       {
+        test: /\.template\.html$/,
+        exclude: /node_modules/,
+        type: 'asset/source'
+      },
+      {
         test: /\.(s?css|sass)$/,
         use: ['style-loader', 'css-loader', 'sass-loader']
       },
