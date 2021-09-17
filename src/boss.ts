@@ -1,6 +1,6 @@
 import { render } from './test';
 import './assets/style/index.scss';
-import BossHTML from './boss.template.html';
+import BossHTML from './boss.html';
 
 console.log(BossHTML);
 

@@ -25,8 +25,8 @@ const config: Configuration = {
         exclude: /node_modules/
       },
       {
-        test: /\.template\.html$/,
-        exclude: /node_modules/,
+        test: /.html$/,
+        include: /src/,
         type: 'asset/source'
       },
       {
