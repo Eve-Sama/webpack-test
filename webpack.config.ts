@@ -40,7 +40,12 @@ const config: Configuration = {
               }
             }
           },
-          'css-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true
+            }
+          },
           'sass-loader'
         ]
       },
@@ -63,6 +68,9 @@ const config: Configuration = {
       logging: 'none'
     }
   },
+  experiments: {
+    topLevelAwait: true
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: 'public/index.html'
@@ -70,7 +78,7 @@ const config: Configuration = {
     new EslintWebpackPlugin({
       extensions: ['js', 'ts']
     })
-  ]
+  ].filter(Boolean)
 };
 
 export default config;

@@ -12,3 +12,6 @@ test1();
 render('Hello World!');
 
 document.body.innerHTML += BossHTML;
+
+await import('./components/module-a');
+await import('./components/module-b');
